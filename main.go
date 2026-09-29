@@ -30,7 +30,7 @@ var (
 func parseArgs() {
 	ap := parser.ArgumentsParser{Banner: "FindKerberoastables - by Remi GASCOU (Podalirius) @ TheManticoreProject - v1.1.0"}
 	ap.SetOptShowBannerOnHelp(true)
-	ap.SetOptShowBannerOnRun(true)
+	ap.SetOptShowBannerOnRun(false)
 	ap.SetupSubParsing("mode", &mode, true)
 
 	find := ap.AddSubParser("find", "List accounts with service principal names over LDAP.")
